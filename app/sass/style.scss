@@ -63,7 +63,7 @@ header[role="banner"] {
 }
 
 .main {
-    width: 80%;
+    width: 74.8%;
     float: left;
     background-image: url("https://media.discordapp.net/attachments/440848756200439810/863087060742963240/unknown.png?width=1630&height=917");
     background-color: $backgroud-color;
@@ -100,13 +100,10 @@ header[role="banner"] {
     font-family: $primary-font;
     display: flex;
     justify-content: space-evenly;
-    a{
+    a {
         color: $primary-color;
     }
 }
-
-
-
 
 .sidebar {
     background-image: url("https://media.discordapp.net/attachments/440848756200439810/863411266046787614/unknown.png");
@@ -114,7 +111,7 @@ header[role="banner"] {
     background-repeat: no-repeat;
     background-position: right;
     position: stactic;
-    height: 1840px;
+    height: 1880px;
     font-family: $primary-font;
     h3 {
         font-size: 40px;
@@ -131,8 +128,11 @@ header[role="banner"] {
 }
 
 #design-selection {
-    background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
-    background-position: 20% 80%;
+    // background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+    background-image: url("https://media.discordapp.net/attachments/440848756200439810/863461956270686249/unknown.png?width=1467&height=917");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     border-top-right-radius: 25px;
     .design-name {
         font-size: 26px;
@@ -140,6 +140,8 @@ header[role="banner"] {
         font-weight: bold;
         padding-right: $default-padding;
         color: $primary-color;
+        background-color: #410D11;
+        border-radius: 25px;
     }
     .designer-name {
         font-size: 20px;
@@ -189,6 +191,7 @@ header[role="banner"] {
     h3 {
         // background-color: #4a0d0f;
         background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+        background-attachment: fixed;
         background-size: cover;
         border-bottom: 5px solid $primary-color;
         color: white;

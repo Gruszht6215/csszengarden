@@ -53,7 +53,7 @@ header[role=banner] h2 {
 }
 
 .main {
-  width: 80%;
+  width: 74.8%;
   float: left;
   background-image: url("https://media.discordapp.net/attachments/440848756200439810/863087060742963240/unknown.png?width=1630&height=917");
   background-color: #b92025;
@@ -101,7 +101,7 @@ header[role=banner] h2 {
   background-repeat: no-repeat;
   background-position: right;
   position: stactic;
-  height: 1840px;
+  height: 1880px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .sidebar h3 {
@@ -118,8 +118,10 @@ header[role=banner] h2 {
 }
 
 #design-selection {
-  background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
-  background-position: 20% 80%;
+  background-image: url("https://media.discordapp.net/attachments/440848756200439810/863461956270686249/unknown.png?width=1467&height=917");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   border-top-right-radius: 25px;
 }
 #design-selection .design-name {
@@ -128,6 +130,8 @@ header[role=banner] h2 {
   font-weight: bold;
   padding-right: 20px;
   color: #ff293d;
+  background-color: #410D11;
+  border-radius: 25px;
 }
 #design-selection .designer-name {
   font-size: 20px;
@@ -176,6 +180,7 @@ header[role=banner] h2 {
 }
 .zen-resources h3 {
   background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+  background-attachment: fixed;
   background-size: cover;
   border-bottom: 5px solid #ff293d;
   color: white;
