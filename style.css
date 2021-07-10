@@ -1,0 +1,196 @@
+* {
+  margin: 0px;
+}
+
+.intro {
+  background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+header[role=banner] {
+  background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
+  background-color: black;
+  height: 550px;
+  background-repeat: no-repeat;
+  text-align: right;
+  color: black;
+  font-weight: bold;
+}
+header[role=banner] h1 {
+  font-size: 75px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+}
+header[role=banner] h2 {
+  font-size: 40px;
+  color: #ff293d;
+  font-family: "Lucida Handwriting", Helvetica, Cursive;
+  padding-top: 30px;
+}
+header[role=banner] h1,
+header[role=banner] h2 {
+  padding-right: 20px;
+}
+
+.summary {
+  background-color: #ff293d;
+  padding: 20px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.preamble {
+  color: #ff293d;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main {
+  width: 80%;
+  float: left;
+  background-image: url("https://media.discordapp.net/attachments/440848756200439810/863087060742963240/unknown.png?width=1630&height=917");
+  background-color: #b92025;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.main div[role=article] {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: 40px 20px 20px 20px;
+  padding: 20px;
+}
+.main div[role=article] h3 {
+  font-size: 40px;
+  color: #ff293d;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main div[role=article] p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.page-wrapper footer {
+  background-color: black;
+  border: 5px solid #b92025;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-wrapper footer a {
+  color: #ff293d;
+}
+
+.sidebar {
+  background-image: url("https://media.discordapp.net/attachments/440848756200439810/863411266046787614/unknown.png");
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: stactic;
+  height: 1840px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar h3 {
+  font-size: 40px;
+}
+.sidebar .select {
+  color: white;
+  background: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top: 5px solid #ff293d;
+  border-right: 5px solid #ff293d;
+  padding: 20px;
+}
+
+#design-selection {
+  background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+  background-position: 20% 80%;
+  border-top-right-radius: 25px;
+}
+#design-selection .design-name {
+  font-size: 26px;
+  font-family: "Lucida Handwriting", Helvetica, Cursive;
+  font-weight: bold;
+  padding-right: 20px;
+  color: #ff293d;
+}
+#design-selection .designer-name {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+#design-selection ul {
+  padding: 40px 0;
+  border: 5px solid #ff293d;
+}
+#design-selection li {
+  color: white;
+  margin: 20px;
+}
+
+#design-archives {
+  flex-direction: row;
+}
+#design-archives h3 {
+  background: black;
+  color: transparent;
+  border-right: 5px solid #ff293d;
+}
+#design-archives ul {
+  background: black;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 5px solid #ff293d;
+  border-right: 5px solid #ff293d;
+  border-left: 5px solid #ff293d;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+#design-archives ul a {
+  color: #ff293d;
+  font-size: 24px;
+}
+
+.zen-resources {
+  clear: both;
+  top: 100px;
+}
+.zen-resources h3 {
+  background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+  background-size: cover;
+  border-bottom: 5px solid #ff293d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.zen-resources ul {
+  background-color: black;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.zen-resources ul a {
+  color: #ff293d;
+}
+
+/*# sourceMappingURL=style.css.map */

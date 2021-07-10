@@ -1,0 +1,210 @@
+$primary-color: #ff293d;
+$backgroud-color: #b92025;
+$secondary-backgroud-color: #374777;
+
+$primary-font: Arial, Helvetica, sans-serif;
+$secondary-font: "Lucida Handwriting", Helvetica, Cursive;
+
+$default-padding: 20px;
+
+* {
+    margin: 0px;
+}
+
+.intro {
+    background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+header[role="banner"] {
+    background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
+    background-color: black;
+    height: 550px;
+    background-repeat: no-repeat;
+
+    text-align: right;
+    color: black;
+    font-weight: bold;
+    h1 {
+        font-size: 75px;
+        color: white;
+        font-family: $primary-font;
+        padding-top: 50px;
+    }
+    h2 {
+        font-size: 40px;
+        color: $primary-color;
+        font-family: $secondary-font;
+        padding-top: 30px;
+    }
+    h1,
+    h2 {
+        padding-right: $default-padding;
+    }
+}
+
+.summary {
+    background-color: $primary-color;
+    padding: $default-padding;
+    font-size: 22px;
+    font-family: $primary-font;
+    font-weight: bold;
+    text-align: center;
+}
+
+.preamble {
+    color: $primary-color;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: $default-padding * 2;
+    font-family: $primary-font;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main {
+    width: 80%;
+    float: left;
+    background-image: url("https://media.discordapp.net/attachments/440848756200439810/863087060742963240/unknown.png?width=1630&height=917");
+    background-color: $backgroud-color;
+    background-repeat: no-repeat;
+    margin: $default-padding;
+}
+
+.main div[role="article"] {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin: $default-padding * 2 $default-padding $default-padding $default-padding;
+    padding: $default-padding;
+    h3 {
+        font-size: 40px;
+        color: $primary-color;
+        margin: $default-padding;
+        font-family: $primary-font;
+    }
+    p {
+        font-family: $primary-font;
+        color: white;
+        margin-bottom: $default-padding;
+        text-align: justify;
+    }
+}
+
+.page-wrapper footer {
+    background-color: black;
+    border: 5px solid #b92025;
+    text-align: center;
+    justify-content: space-between;
+    padding: $default-padding;
+    font-size: 40px;
+    font-family: $primary-font;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        color: $primary-color;
+    }
+}
+
+
+
+
+.sidebar {
+    background-image: url("https://media.discordapp.net/attachments/440848756200439810/863411266046787614/unknown.png");
+    margin: $default-padding;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: stactic;
+    height: 1840px;
+    font-family: $primary-font;
+    h3 {
+        font-size: 40px;
+    }
+    .select {
+        color: white;
+        background: black;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-top: 5px solid $primary-color;
+        border-right: 5px solid $primary-color;
+        padding: $default-padding;
+    }
+}
+
+#design-selection {
+    background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+    background-position: 20% 80%;
+    border-top-right-radius: 25px;
+    .design-name {
+        font-size: 26px;
+        font-family: $secondary-font;
+        font-weight: bold;
+        padding-right: $default-padding;
+        color: $primary-color;
+    }
+    .designer-name {
+        font-size: 20px;
+        font-family: $primary-font;
+        color: whitesmoke;
+    }
+    ul {
+        padding: $default-padding * 2 0;
+        border: 5px solid $primary-color;
+    }
+    li {
+        color: white;
+        margin: $default-padding;
+    }
+}
+
+#design-archives {
+    flex-direction: row;
+    h3 {
+        background: black;
+        color: transparent;
+        border-right: 5px solid $primary-color;
+    }
+    ul {
+        background: black;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom: 5px solid $primary-color;
+        border-right: 5px solid $primary-color;
+        border-left: 5px solid $primary-color;
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: $default-padding * 2;
+        padding-right: $default-padding;
+        a {
+            color: $primary-color;
+            font-size: 24px;
+        }
+    }
+}
+
+.zen-resources {
+    clear: both;
+    top: 100px;
+    h3 {
+        // background-color: #4a0d0f;
+        background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+        background-size: cover;
+        border-bottom: 5px solid $primary-color;
+        color: white;
+        text-align: center;
+        padding: $default-padding;
+    }
+    ul {
+        background-color: black;
+
+        font-size: 24px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: $default-padding;
+        a {
+            color: $primary-color;
+            // font-family: $secondary-font;
+        }
+    }
+}
