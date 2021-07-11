@@ -11,3 +11,7 @@
 * Push your SCSS or Sass file and preprocessed `style.css` to your repository.
 * Make your Github repository be Github pages project site (not user site).
 * Turn in your github repository link (should be `https://github.com/<username>/csszengarden`) and github pages link (should be `https://<username>.github.io/csszengarden/`).
+
+## Attention
+
+* Work perfectly with 2560*1440, great with 1920*1080

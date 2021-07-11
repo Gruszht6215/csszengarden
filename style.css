@@ -1,11 +1,16 @@
 * {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .intro {
   background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
   background-color: black;
   background-repeat: no-repeat;
+}
+.intro a {
+  color: whitesmoke;
 }
 
 header[role=banner] {
@@ -18,15 +23,16 @@ header[role=banner] {
   font-weight: bold;
 }
 header[role=banner] h1 {
-  font-size: 75px;
+  font-size: 65px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 50px;
+  text-transform: uppercase;
 }
 header[role=banner] h2 {
   font-size: 40px;
   color: #ff293d;
-  font-family: "Lucida Handwriting", Helvetica, Cursive;
+  font-family: "Lucida Handwriting", Helvetica;
   padding-top: 30px;
 }
 header[role=banner] h1,
@@ -79,6 +85,9 @@ header[role=banner] h2 {
   margin-bottom: 20px;
   text-align: justify;
 }
+.main div[role=article] a {
+  color: #ff293d;
+}
 
 .page-wrapper footer {
   background-color: black;
@@ -94,18 +103,25 @@ header[role=banner] h2 {
 .page-wrapper footer a {
   color: #ff293d;
 }
+.page-wrapper footer a:hover {
+  background-color: #b92025;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
 
 .sidebar {
   background-image: url("https://media.discordapp.net/attachments/440848756200439810/863411266046787614/unknown.png");
   margin: 20px;
   background-repeat: no-repeat;
   background-position: right;
-  position: stactic;
-  height: 1880px;
+  background-position: bottom 180px right 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .sidebar h3 {
   font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .sidebar .select {
   color: white;
@@ -117,6 +133,11 @@ header[role=banner] h2 {
   padding: 20px;
 }
 
+#design-selection,
+#design-archives {
+  background-image: url("https://wallpaperaccess.com/full/1560881.png");
+}
+
 #design-selection {
   background-image: url("https://media.discordapp.net/attachments/440848756200439810/863461956270686249/unknown.png?width=1467&height=917");
   background-repeat: no-repeat;
@@ -126,12 +147,15 @@ header[role=banner] h2 {
 }
 #design-selection .design-name {
   font-size: 26px;
-  font-family: "Lucida Handwriting", Helvetica, Cursive;
+  font-family: "Lucida Handwriting", Helvetica;
   font-weight: bold;
   padding-right: 20px;
   color: #ff293d;
-  background-color: #410D11;
+  background-color: #410d11;
   border-radius: 25px;
+}
+#design-selection .design-name:hover {
+  color: white;
 }
 #design-selection .designer-name {
   font-size: 20px;
@@ -149,6 +173,7 @@ header[role=banner] h2 {
 
 #design-archives {
   flex-direction: row;
+  border-bottom-right-radius: 25px;
 }
 #design-archives h3 {
   background: black;
@@ -158,28 +183,35 @@ header[role=banner] h2 {
 #design-archives ul {
   background: black;
   border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
   border-bottom: 5px solid #ff293d;
   border-right: 5px solid #ff293d;
-  border-left: 5px solid #ff293d;
   color: white;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding-bottom: 40px;
   padding-right: 20px;
+  list-style-type: none;
 }
 #design-archives ul a {
+  background-color: #b92025;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
+#design-archives ul a:hover {
+  background-color: #E3E3E3;
   color: #ff293d;
-  font-size: 24px;
+  padding: 10px 40px;
+  border-radius: 25px;
 }
 
 .zen-resources {
   clear: both;
-  top: 100px;
 }
 .zen-resources h3 {
-  background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+  background-image: url("https://media.discordapp.net/attachments/863811079972716555/863812576771833966/unknown.png");
+  background-position: 0% 40%;
   background-attachment: fixed;
   background-size: cover;
   border-bottom: 5px solid #ff293d;
@@ -195,7 +227,16 @@ header[role=banner] h2 {
   padding: 20px;
 }
 .zen-resources ul a {
+  background-color: #b92025;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
+.zen-resources ul a:hover {
+  background-color: #E3E3E3;
   color: #ff293d;
+  padding: 10px 40px;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

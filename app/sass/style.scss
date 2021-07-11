@@ -3,18 +3,25 @@ $backgroud-color: #b92025;
 $secondary-backgroud-color: #374777;
 
 $primary-font: Arial, Helvetica, sans-serif;
-$secondary-font: "Lucida Handwriting", Helvetica, Cursive;
+$secondary-font: "Lucida Handwriting", Helvetica;
 
 $default-padding: 20px;
 
 * {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+
+/////////////////////////////////////////////HEAD CONTENT/////////////////////////////////////////////
 .intro {
     background-image: url("https://images6.alphacoders.com/105/thumb-1920-1051013.png");
     background-color: black;
     background-repeat: no-repeat;
+    a {
+        color: whitesmoke;
+    }
 }
 
 header[role="banner"] {
@@ -27,10 +34,11 @@ header[role="banner"] {
     color: black;
     font-weight: bold;
     h1 {
-        font-size: 75px;
+        font-size: 65px;
         color: white;
         font-family: $primary-font;
         padding-top: 50px;
+        text-transform: uppercase;
     }
     h2 {
         font-size: 40px;
@@ -61,7 +69,9 @@ header[role="banner"] {
     font-weight: bold;
     text-align: center;
 }
+/////////////////////////////////////////////END HEAD CONTENT/////////////////////////////////////////////
 
+/////////////////////////////////////////////BLOG CONTENT/////////////////////////////////////////////
 .main {
     width: 74.8%;
     float: left;
@@ -88,6 +98,9 @@ header[role="banner"] {
         margin-bottom: $default-padding;
         text-align: justify;
     }
+    a{
+        color: $primary-color;
+    }
 }
 
 .page-wrapper footer {
@@ -103,18 +116,28 @@ header[role="banner"] {
     a {
         color: $primary-color;
     }
+    a:hover {
+        background-color: $backgroud-color;
+        color: white;
+        padding: $default-padding/2 $default-padding*2;
+        border-radius: 25px;
+    }
 }
+/////////////////////////////////////////////END BLOG CONTENT/////////////////////////////////////////////
 
+/////////////////////////////////////////////SIDEBAR CONTENT/////////////////////////////////////////////
 .sidebar {
     background-image: url("https://media.discordapp.net/attachments/440848756200439810/863411266046787614/unknown.png");
     margin: $default-padding;
     background-repeat: no-repeat;
     background-position: right;
-    position: stactic;
-    height: 1880px;
+    background-position: bottom 180px right 0px;
+    // border: 5px solid green;
     font-family: $primary-font;
     h3 {
         font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
     }
     .select {
         color: white;
@@ -125,6 +148,11 @@ header[role="banner"] {
         border-right: 5px solid $primary-color;
         padding: $default-padding;
     }
+}
+
+#design-selection,
+#design-archives {
+    background-image: url("https://wallpaperaccess.com/full/1560881.png");
 }
 
 #design-selection {
@@ -140,8 +168,11 @@ header[role="banner"] {
         font-weight: bold;
         padding-right: $default-padding;
         color: $primary-color;
-        background-color: #410D11;
+        background-color: #410d11;
         border-radius: 25px;
+    }
+    .design-name:hover {
+        color: white;
     }
     .designer-name {
         font-size: 20px;
@@ -160,6 +191,7 @@ header[role="banner"] {
 
 #design-archives {
     flex-direction: row;
+    border-bottom-right-radius: 25px;
     h3 {
         background: black;
         color: transparent;
@@ -168,29 +200,38 @@ header[role="banner"] {
     ul {
         background: black;
         border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
         border-bottom: 5px solid $primary-color;
         border-right: 5px solid $primary-color;
-        border-left: 5px solid $primary-color;
         color: white;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding-bottom: $default-padding * 2;
         padding-right: $default-padding;
+        list-style-type: none;
         a {
+            background-color: $backgroud-color;
+            color: white;
+            padding: $default-padding/2 $default-padding*2;
+            border-radius: 25px;
+        }
+        a:hover {
+            background-color: #E3E3E3;
             color: $primary-color;
-            font-size: 24px;
+            padding: $default-padding/2 $default-padding*2;
+            border-radius: 25px;
         }
     }
 }
+/////////////////////////////////////////////END SIDEBAR CONTENT/////////////////////////////////////////////
+
 
 .zen-resources {
     clear: both;
-    top: 100px;
     h3 {
-        // background-color: #4a0d0f;
-        background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+        // background-image: url("https://images7.alphacoders.com/727/thumb-1920-727036.png");
+        background-image: url("https://media.discordapp.net/attachments/863811079972716555/863812576771833966/unknown.png");
+        background-position: 0% 40%;
         background-attachment: fixed;
         background-size: cover;
         border-bottom: 5px solid $primary-color;
@@ -200,14 +241,21 @@ header[role="banner"] {
     }
     ul {
         background-color: black;
-
         font-size: 24px;
         display: flex;
         justify-content: space-evenly;
         padding: $default-padding;
         a {
+            background-color: $backgroud-color;
+            color: white;
+            padding: $default-padding/2 $default-padding*2;
+            border-radius: 25px;
+        }
+        a:hover {
+            background-color: #E3E3E3;
             color: $primary-color;
-            // font-family: $secondary-font;
+            padding: $default-padding/2 $default-padding*2;
+            border-radius: 25px;
         }
     }
 }
